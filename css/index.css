@@ -69,8 +69,21 @@ section, footer{
     padding:4% 0;
 }
 .container {
-    width: 80%;
+    width: 800px;
     margin: 0 auto;
+}
+
+p {
+    line-height: 1.4;
+}
+
+header {
+    height: 80vh;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 /*Top Section Styles*/
@@ -85,24 +98,41 @@ section, footer{
 }
 
 .top-content .text-container {
-    width: 35%;
+    width: 40%;
     padding: 0 1%;
-    padding-bottom: 4%;  
+    padding-bottom: 20px;  
 }
+
+.top-content h2 {
+    margin: 1% 0;
+}
+
+.top-content p {
+    margin: 1.8%;  
+}
+
+.top-about .top-content h2{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 91%;
+}
+
 
 /*Middle Section Styles*/
 .middle-content {
-    margin-bottom: 4%;
+    margin-bottom: 20px;
 }
 
 .middle-content h2 {
     margin-bottom: 0;
+    padding: 0 2%;
 }
 
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #ff4b00;
 }
 
 .middle-content .boxes .box {
@@ -112,16 +142,80 @@ section, footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 12.5%;
+    height: 100px;
+}
+
+.middle-content .boxes .box1 {
+    background: teal;
+}
+
+.middle-content .boxes .box2 {
+    background: gold;
+}
+
+.middle-content .boxes .box3 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box4 {
+    background: coral;
+}
+
+.middle-content .boxes .box5 {
+    background: crimson;
+}
+
+.middle-content .boxes .box6 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box7 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box8 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box9 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: dodgerblue;
+}
+
+.middle-content .about-middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 50%; 
+}
+
+.line1, .line2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    padding: 2%; 
+    width: 100%;
+}
+
+.strategy , .work, .places, .collaboration {
+    padding: 2%;
+    margin: 2%;
+    border-bottom: 2px solid #ff4b00;
 }
 
 /*Bottom Section Styles*/
 .bottom-content {
     display: flex;
+    margin: 0 2% 20px;
     justify-content: space-between;
 }
 
 .bottom-content .text-container {
-    width:25%;
+    padding-right: 4%;
 }
 
 .bottom-content .text-container:last-child {
@@ -134,7 +228,37 @@ footer {
     background-color: #ff4b00;
 }
 
+footer nav {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    padding: 2% 0 2% 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
 /*About Page Styles*/
 
+.about-middle h3{
+    margin: 4% 0;
+}
+
+.about-middle button {
+    padding: 2% 4%;
+    border-radius: 10%;
+    background:white;
+    border: black 2px solid;
+    font-size: 16px;
+    margin: 4% 0;
+}
+
+.bottom-content .about-bottom{
+    margin: 3% 0;
+}
 
 /*Responsive Styles*/
