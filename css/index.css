@@ -93,18 +93,18 @@ p {
     line-height: 1.4;
 }
 
-nav {
+.nav1 {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     text-align: center;
 }
 
-.logo {
+.logo1 {
     width: 20%;
 }
 
-header {
+.header1 {
     height: 15vh;
     display: flex;
     text-align: center;
@@ -113,7 +113,7 @@ header {
     align-content: center;
 }
 
-.links {
+.links1 {
     width: 60%;
     display: flex;
     justify-content: space-evenly;
@@ -254,31 +254,32 @@ header {
 }
 
 
-
 /*Footer Styles*/
-footer {
+.home-footer {
     width: 100%;
     background-color: #ff4b00;
 }
 
-footer nav {
+.home-footer-nav {
     display: flex;
     padding: 2% 0 2% 0;
     margin: 0;
     font-size: 14px;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
 }
 
-footer nav a {
+.home-footer-nav a {
     color: white;
     text-decoration: none;
-    
 }
 
 /*About Page Styles*/
 
 .nav2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     text-align: center;
 }
@@ -288,7 +289,7 @@ footer nav a {
 }
 
 .header2 {
-    height: 20vh;
+    height: 15vh;
     display: flex;
     text-align: center;
     flex-wrap: wrap;
@@ -327,6 +328,26 @@ footer nav a {
     margin: 3% 0;
 }
 
+.about-footer {
+    width: 100%;
+    background-color: #ff4b00;
+}
+
+.about-footer-nav{
+    display: flex;
+    padding: 2% 0 2% 0;
+    margin: 0;
+    font-size: 14px;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+}
+
+.about-footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
 /*Responsive Styles*/
 
 @media(max-width: 500px){
@@ -335,14 +356,14 @@ footer nav a {
         text-align: center;
     }
 
-    .logo{
+    .logo2{
         display: flex;
         align-content: center;
         justify-content: center;
         width: 45%;
     }
 
-    nav {
+    .nav2 {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -472,14 +493,25 @@ footer nav a {
         font-weight: bold;
     }
 
-    footer nav {
+    .home-footer-nav {
         flex-direction: column;
         font-size: 18px;
         align-content: center;
         align-items: center;
     }
 
-    footer nav a{
+    .home-footer-nav a{
+        margin: 1rem;
+    }
+
+    .about-footer-nav {
+        flex-direction: column;
+        font-size: 18px;
+        align-content: center;
+        align-items: center;
+    }
+
+    .about-footer-nav a{
         margin: 1rem;
     }
 }
